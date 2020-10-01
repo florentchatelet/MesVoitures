@@ -178,3 +178,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_theme_support( 'post-thumbnails' );
+
+add_action('init', 'my_custom_init');
+function my_custom_init()
+{
+/* notre code PHP pour rajouter les custom post type */
+}
